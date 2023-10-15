@@ -33,14 +33,14 @@ file_path = files_dir/'file.txt'
 with open(file_path, 'a+') as f:
     f.write('77254654')
 
-#os.remove('name_file')         #Удаляет файл
-#print(os.path.exists("file.txt"))                #Существует ли файл
+#os.remove('name_file')                             #Удаляет файл
+#print(os.path.exists("file.txt"))                  #Существует ли файл
 print(Path("file.txt").exists())
 
 print('Path to file:\n', file_path)
 f_name = path.basename(file_path)
-print("File name:\n", path.basename(file_path))     #Название файла
-print("Dir name:\n", path.dirname(file_path))      #Название папки
+print("File name:\n", path.basename(file_path))         #Название файла
+print("Dir name:\n", path.dirname(file_path))           #Название папки
 print(path.splitext(f_name))
 
 
