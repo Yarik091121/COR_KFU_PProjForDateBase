@@ -47,7 +47,7 @@ while ls[0]!='out':
                     print(pat)
     elif ls[0]=='touch':
         if len(ls)==1:
-            print("You didn't enter the file name")
+            print("You didn't enter the name of file")
         elif Path(os.path.join(pat, ls[1])).exists():
             print("This file already exists!")
         else:
